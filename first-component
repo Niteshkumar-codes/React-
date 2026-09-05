@@ -1,0 +1,10 @@
+function Practice() {
+  const message = "Starting React today";
+  return (
+    <section>
+      <h2>{message}</h2>
+      <p>This is my first React component.</p>
+    </section>
+  );
+}
+export default Practice;
