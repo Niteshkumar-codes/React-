@@ -1,0 +1,13 @@
+function LearningList() {
+  const topics = ["JSX", "Components", "Props"];
+  return (
+    <div>
+      <h3>What I am learning</h3>
+
+      {topics.map((topic, index) => (
+        <p key={index}>{topic}</p>
+      ))}
+    </div>
+  );
+}
+export default LearningList;
