@@ -1,0 +1,12 @@
+function MyPage() {
+  const student = "Nitesh";
+  const currentTopic = "JSX";
+  return (
+    <div>
+      <h2>Hello {student}</h2>
+      <p>I am learning {currentTopic} today.</p>
+    </div>
+  );
+}
+
+export default MyPage;
