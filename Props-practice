@@ -1,0 +1,27 @@
+function Course(props) {
+  return (
+    <div>
+      <h3>{props.title}</h3>
+      <p>Duration: {props.duration}</p>
+      <p>Level: {props.level}</p>
+    </div>
+  );
+}
+function App() {
+  return (
+    <div>
+      <Course
+        title="React"
+        duration="2 months"
+        level="Beginner"
+      />
+
+      <Course
+        title="JavaScript"
+        duration="3 months"
+        level="Intermediate"
+      />
+    </div>
+  );
+}
+export default App;
