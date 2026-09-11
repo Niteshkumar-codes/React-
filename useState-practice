@@ -1,0 +1,15 @@
+import { useState } from "react";
+function StudyTracker() {
+  const [hours, setHours] = useState(0);
+  function addHour() {
+    setHours(hours + 1);
+  }
+  return (
+    <div>
+      <h2>Study Hours: {hours}</h2>
+      <button onClick={addHour}>Add 1 Hour</button>
+      <button onClick={() => setHours(0)}>Reset</button>
+    </div>
+  );
+}
+export default StudyTracker;
