@@ -1,0 +1,21 @@
+import { useState } from "react";
+function Attendance() {
+  const [present, setPresent] = useState(false);
+  function markPresent() {
+    setPresent(true);
+  }
+  return (
+    <div>
+      <h2>
+        Status: {present ? "Present" : "Not Marked"}
+      </h2>
+      <button onClick={markPresent}>
+        Mark Present
+      </button>
+      <button onClick={() => setPresent(false)}>
+        Undo
+      </button>
+    </div>
+  );
+}
+export default Attendance;
