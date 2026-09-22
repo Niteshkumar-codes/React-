@@ -1,0 +1,25 @@
+import { useState } from "react";
+function FeedbackForm() {
+  const [feedback, setFeedback] = useState("");
+  function saveFeedback(event) {
+    event.preventDefault();
+    if (feedback.trim() === "") {
+      return;
+    }
+    alert("Feedback: " + feedback);
+    setFeedback("");
+  }
+  return (
+    <form onSubmit={saveFeedback}>
+      <h2>Give Feedback</h2>
+      <textarea
+        value={feedback}
+        onChange={(event) => setFeedback(event.target.value)}
+        placeholder="Write something..."
+      />
+      <br />
+      <button type="submit">Submit Feedback</button>
+    </form>
+  );
+}
+export default FeedbackForm;
